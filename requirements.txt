@@ -1,0 +1,4 @@
+# It stores all dependency or liberary for running the application
+Flask
+gunicorn  # needed for cloud environment
+requests
