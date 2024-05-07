@@ -17,9 +17,9 @@ def weather():
     }
     response=requests.get(url,params=param)
     data=response.json()  
-    return f"DATA:{data}"  
-
-
+    city=data["name"]
+    temp=data["temp"]
+    return f"DATA:{data},/n city: {city}, current temprature:{temp}"  
 
 
 if __name__=="__main__":
