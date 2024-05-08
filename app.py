@@ -18,8 +18,8 @@ def weather():
     response=requests.get(url,params=param)
     data=response.json()  
     city=data["name"]
-    temp=data["temp"]
-    return f"DATA:{data},/n city: {city}, current temprature:{temp}"  
+    
+    return f"DATA:{data}, city: {city}"  
 
 
 if __name__=="__main__":
